@@ -1,0 +1,10 @@
+name: slcs-demo
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python=3.5
+- flask 
+- requests-oauthlib 
+- pyopenssl
+
