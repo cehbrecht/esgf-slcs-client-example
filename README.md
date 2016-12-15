@@ -9,9 +9,9 @@ and the [OAuthLib extensions](https://requests-oauthlib.readthedocs.io) for the
 **NOTE: The following assumes Python 3.**
 
 To run the example client, you first need to create an OAuth application via the
-admin interface on your ESGF SLCS Server. The callback URL should be
-`http://localhost:5000/oauth_callback`. Take a note of the generated client ID and
-secret.
+admin interface on your ESGF SLCS Server (`https://<slcs_service_ip>/admin`).
+The callback URL should be `http://localhost:5000/oauth_callback`.
+Take a note of the generated client ID and secret.
 
 Open `esgf_slcs_client_example.py` and modify the 'settings' to reflect your setup
 (including the client ID and secret from above). Then run:
