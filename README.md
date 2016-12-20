@@ -13,6 +13,8 @@ admin interface on your ESGF SLCS Server (`https://<slcs_service_ip>/admin`).
 The callback URL should be `http://localhost:5000/oauth_callback`.
 Take a note of the generated client ID and secret.
 
+TODO: more infos about configuring an OAuth application.
+
 Open `esgf_slcs_client_example.py` and modify the 'settings' to reflect your setup
 (including the client ID and secret from above). Then run:
 
@@ -20,4 +22,11 @@ Open `esgf_slcs_client_example.py` and modify the 'settings' to reflect your set
 $ pyvenv venv
 $ venv/bin/pip install flask requests-oauthlib pyopenssl
 $ venv/bin/python esgf_slcs_client_example.py
+```
+
+You can also use a conda environment:
+
+```
+$ conda env create -f environment.yml
+$ source activate slcs-demo
 ```
